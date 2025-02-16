@@ -1,5 +1,5 @@
 import { postType } from './postType'
-import { tag } from './tag'
-import { job } from './job'
+import { tagType } from './tagType'
+import { jobType } from './jobType'
 
-export const schemaTypes = [postType, tag, job]
+export const schemaTypes = [postType, tagType, jobType]

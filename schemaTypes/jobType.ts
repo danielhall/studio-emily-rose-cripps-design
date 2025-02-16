@@ -1,6 +1,6 @@
 import { defineType, defineField, defineArrayMember } from 'sanity'
 
-export const job = defineType({
+export const jobType = defineType({
   name: 'job',
   title: 'Job',
   type: 'document',
