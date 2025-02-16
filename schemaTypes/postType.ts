@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineType, defineField, defineArrayMember} from 'sanity'
 
 export const postType = defineType({
   name: 'post',
@@ -11,25 +11,57 @@ export const postType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      title: "Tags",
+      name: "tags",
+      type: "array",
+      of: [
+        defineArrayMember(
+        { 
+          type: "reference",
+          to: [
+            {type: 'tag'}
+          ]
+         })  
+      ],
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+      title: "Job",
+      name: "job",
+      type: "reference",
+      to: [
+        {type: 'job'}
+      ]
+    }),
+    defineField({
       name: 'slug',
       type: 'slug',
       options: {source: 'title'},
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'publishedAt',
-      type: 'datetime',
-      initialValue: () => new Date().toISOString(),
-      validation: (rule) => rule.required(),
-    }),
-    defineField({
+      title: 'Thumbnail',
       name: 'image',
       type: 'image',
+    }),
+    defineField({
+      title: "Gallery",
+      name: "gallery",
+      type: "array",
+      of: [
+        defineArrayMember({ type: "image" })  
+      ]
     }),
     defineField({
       name: 'body',
       type: 'array',
       of: [{type: 'block'}],
+    }),
+    defineField({
+      name: 'publishedAt',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
+      validation: (rule) => rule.required(),
     }),
   ],
 })
