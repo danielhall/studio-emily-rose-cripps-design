@@ -6,9 +6,28 @@ export const jobType = defineType({
   type: 'document',
   fields: [
     defineField({
+      title: 'Title',
       name: 'title',
       type: 'string',
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      title: 'Introduction',
+      name: 'introduction',
+      type: 'string',
+      validation: (rule) => rule.length(215).required(),
+    }),
+    defineField({
+      title: 'Landscape Poster',
+      name: 'landscapePoster',
+      type: 'image',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
+        title: 'Portrait Poster',
+        name: 'portraitPoster',
+        type: 'image',
+        validation: (rule) => rule.required(),
     }),
     defineField({
       title: 'Year',
