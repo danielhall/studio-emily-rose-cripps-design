@@ -58,6 +58,21 @@ export const postType = defineType({
       of: [{type: 'block'}],
     }),
     defineField({
+      name: 'featuredBody',
+      type: 'array',
+      of: [{type: 'block'}],
+    }),
+    defineField({
+      name: 'isHeroFeatured',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'isFeatured',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
       name: 'publishedAt',
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
