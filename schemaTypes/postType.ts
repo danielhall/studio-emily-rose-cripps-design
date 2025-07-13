@@ -73,6 +73,11 @@ export const postType = defineType({
       initialValue: false,
     }),
     defineField({
+      name: 'hideFromPortfolioIndex',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
       name: 'publishedAt',
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
