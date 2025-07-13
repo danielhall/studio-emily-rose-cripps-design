@@ -21,5 +21,9 @@ export const tagType = defineType({
       type: 'color',
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'displayInMenu',
+      type: 'boolean',
+    }),
   ],
 })
