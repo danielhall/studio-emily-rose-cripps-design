@@ -1,9 +1,12 @@
 {
-  "name": "emily-rose-cripps-design",
-  "private": true,
+  "name": "studio-emily-rose-cripps-design",
+  "private": false,
   "version": "1.0.0",
   "main": "package.json",
   "license": "UNLICENSED",
+  "engines": {
+    "node": "22.18.0"
+  },
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",

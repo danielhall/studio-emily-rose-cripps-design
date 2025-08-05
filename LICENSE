@@ -1,0 +1,29 @@
+# License
+
+Copyright © 2025 Daniel Hall. All rights reserved.
+
+This Sanity Studio configuration was developed by Daniel Hall for Emily Rose Cripps Design and is provided for portfolio demonstration purposes only.
+
+## Permitted Use
+- View source code for educational/reference purposes
+- Study CMS configuration techniques and schema patterns
+
+## Prohibited Use
+- Commercial use or redistribution
+- Modification, adaptation, or derivative works
+- Use of schema configurations in other projects without explicit written permission
+- Removal or modification of copyright notices
+- Use of content structures or schemas related to Emily Rose Cripps Design
+
+## Client Work Notice
+This repository contains CMS configuration created for a client. While the technical implementation is the intellectual property of Daniel Hall, any content structures, schemas, or configurations specific to the client's business remain subject to client agreements.
+
+## Third-Party Dependencies
+This project uses Sanity.io and various other open-source libraries, each governed by their respective licenses. See package.json for a full list of dependencies.
+
+For licensing inquiries or permission requests, please contact:
+**Daniel Hall**  
+Solutions Architect  
+[https://danieljh.uk](https://danieljh.uk)
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
